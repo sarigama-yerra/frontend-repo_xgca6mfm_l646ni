@@ -3,14 +3,12 @@
 > vite
 
 
-  VITE v5.4.20  ready in 253 ms
+  VITE v5.4.20  ready in 282 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.8.59:3000/
-11:56:44 AM [vite] Pre-transform error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
-11:56:44 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Screen3Intro.jsx:20:118: ERROR: Expected "}" but found "http"
-11:56:44 AM [vite] Internal server error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
+11:58:33 AM [vite] Pre-transform error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
+11:58:33 AM [vite] Internal server error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
   Plugin: vite:css
   File: /home/workspace/src/index.css:1:0
   1  |  @tailwind base;
@@ -27,30 +25,7 @@
       at async compileCSS (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:36898:21)
       at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:36171:11)
       at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
-11:56:45 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Screen3Intro.jsx:20:118: ERROR: Expected "}" but found "http"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Screen3Intro.jsx:20:118
-  
-  Expected "}" but found "http"
-  18 |        }} />
-  19 |        {/* Marble and columns as subtle overlays */}
-  20 |        <div className="absolute inset-0 opacity-5" style={{backgroundImage:"url('data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 800 600\\\"><filter id=\\"m\\\"><feTurbulence type=\\"fractalNoise\\" baseFrequency=\\"0.8\\" numOctaves=\\"2\\"/></filter><rect width=\\"800\\" height=\\"600\\" filter=\\"url(%23m)\\"/></svg>')"}} />
-     |                                                                                                                        ^
-  21 |        <div className="absolute left-0 top-0 bottom-0 w-24 opacity-30" style={{background:"linear-gradient(90deg, rgba(184,160,120,0.08), transparent)"}}/>
-  22 |        <div className="absolute right-0 top-0 bottom-0 w-24 opacity-30" style={{background:"linear-gradient(270deg, rgba(184,160,120,0.08), transparent)"}}/>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-11:56:49 AM [vite] Internal server error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
+11:58:38 AM [vite] Internal server error: [postcss] /home/workspace/src/index.css:1:1: The `bg-[url('data:image/svg+xml;utf8,<svg` class does not exist. If `bg-[url('data:image/svg+xml;utf8,<svg` is a custom class, make sure it is defined within a `@layer` directive.
   Plugin: vite:css
   File: /home/workspace/src/index.css:1:0
   1  |  @tailwind base;
@@ -67,26 +42,3 @@
       at async compileCSS (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:36898:21)
       at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:36171:11)
       at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
-11:56:50 AM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Screen3Intro.jsx:20:118: ERROR: Expected "}" but found "http"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Screen3Intro.jsx:20:118
-  
-  Expected "}" but found "http"
-  18 |        }} />
-  19 |        {/* Marble and columns as subtle overlays */}
-  20 |        <div className="absolute inset-0 opacity-5" style={{backgroundImage:"url('data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 800 600\\\"><filter id=\\"m\\\"><feTurbulence type=\\"fractalNoise\\" baseFrequency=\\"0.8\\" numOctaves=\\"2\\"/></filter><rect width=\\"800\\" height=\\"600\\" filter=\\"url(%23m)\\"/></svg>')"}} />
-     |                                                                                                                        ^
-  21 |        <div className="absolute left-0 top-0 bottom-0 w-24 opacity-30" style={{background:"linear-gradient(90deg, rgba(184,160,120,0.08), transparent)"}}/>
-  22 |        <div className="absolute right-0 top-0 bottom-0 w-24 opacity-30" style={{background:"linear-gradient(270deg, rgba(184,160,120,0.08), transparent)"}}/>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
