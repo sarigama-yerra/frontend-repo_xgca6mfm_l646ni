@@ -34,9 +34,12 @@ const items = [
 ]
 
 export default function Screen4Craft() {
+  const marbleSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><filter id="m"><feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="2"/></filter><rect width="800" height="600" filter="url(#m)"/></svg>`
+  const marbleUrl = `url("data:image/svg+xml;utf8,${encodeURIComponent(marbleSvg)}")`
+
   return (
     <section className="relative py-28">
-      <div className="absolute inset-0 opacity-5" style={{backgroundImage:"url('data:image/svg+xml;utf8,<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 800 600\\\"><filter id=\\"m\\\"><feTurbulence type=\\"fractalNoise\\" baseFrequency=\\"0.4\\" numOctaves=\\"2\\"/></filter><rect width=\\"800\\" height=\\"600\\" filter=\\"url(%23m)\\"/></svg>')"}} />
+      <div className="absolute inset-0 opacity-5" style={{ backgroundImage: marbleUrl }} />
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {items.map((it, idx) => (
